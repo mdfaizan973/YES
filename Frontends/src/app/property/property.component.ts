@@ -14,7 +14,7 @@ export class PropertyComponent {
 
   ngOnInit() {
     this.loading = true;
-    this.http.get<any[]>(`http://127.0.0.1:5000/hosts`).subscribe(
+    this.http.get<any[]>(`https://hojabhai-pn4u.onrender.com/hosts`).subscribe(
       (response) => {
         this.property = response;
         // console.log(response);

@@ -25,7 +25,7 @@ export class HostsComponent {
       status: this.status ? 'Active' : 'Inactive',
     };
 
-    this.http.post('http://localhost:5000/host', data).subscribe(
+    this.http.post('https://hojabhai-pn4u.onrender.com/host', data).subscribe(
       (response) => {
         console.log('Host request successful!', response);
       },
